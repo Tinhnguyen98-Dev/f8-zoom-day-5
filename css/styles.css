@@ -160,7 +160,7 @@ li.active a {
     background-color: #ccc;
 }
 
-/* form-interacive.html */
+/* form-interactive.html */
 .register {
     max-width: 300px;
     margin: 10px auto;
@@ -285,4 +285,102 @@ li.active a {
 .btn:active {
     color: #fff;
     background-color: #4caf50;
+}
+
+/* pricing-table.html */
+:root {
+    --main-color: #160f38;
+}
+
+.pricing-block {
+    display: inline-block;
+    width: calc((100% - 100px) / 3);
+    font-size: 0;
+    border: 2px solid #e4dffe;
+    border-radius: 4px;
+    padding: 12px 12px 20px;
+}
+
+.pricing-block:hover {
+    border-color: var(--main-color);
+    box-shadow: -1px 13px 32px 12px rgba(0, 5, 120, 0.75);
+    -webkit-box-shadow: -1px 13px 32px 12px rgba(0, 5, 120, 0.75);
+    -moz-box-shadow: -1px 13px 32px 12px rgba(0, 5, 120, 0.75);
+}
+
+.pricing-block + .pricing-block {
+    margin-left: 47px;
+}
+
+.pricing-heading {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.pricing-para {
+    font-size: 1.6rem;
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pricing-infor-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.pricing {
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 14px;
+}
+
+.pricing-infor-content {
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
+
+.btn-pricing {
+    background-color: #e4dffe;
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.btn-pricing:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    opacity: 1;
+}
+
+.pricing-text {
+    position: relative;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-bottom: 6px;
+}
+
+.pricing-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -22px;
+    width: 14px;
+    height: 14px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.pricing-text::after {
+    content: "✓";
+    position: absolute;
+    top: 1px;
+    left: -19px;
 }
