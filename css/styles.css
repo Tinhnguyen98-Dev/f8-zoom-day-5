@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -154,4 +158,131 @@ li.active a {
 .nav-child li:hover {
     color: #fff;
     background-color: #ccc;
+}
+
+/* form-interacive.html */
+.register {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 0;
+    background-color: #ccc;
+    /* border-radius: 12px;
+    background: #86dbeb;
+    background-image: linear-gradient(
+        90deg,
+        rgba(134, 219, 235, 1) 0%,
+        rgba(87, 199, 133, 1) 50%,
+        rgba(237, 221, 83, 1) 100%
+    ); */
+}
+
+.heading-form {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.form-input {
+    font-size: 11px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-input:focus {
+    /* background-color: yellow; */
+    border-color: #4caf50; /* green border */
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.register:focus-within {
+    border-radius: 12px;
+    background: #86dbeb;
+    background-image: linear-gradient(
+        90deg,
+        rgba(134, 219, 235, 1) 0%,
+        rgba(87, 199, 133, 1) 50%,
+        rgba(237, 221, 83, 1) 100%
+    );
+}
+
+.form-input:invalid {
+    border-color: red;
+}
+
+.form-label {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.form-label::after {
+    content: " *";
+    position: absolute;
+    font-size: 1rem;
+    color: red;
+}
+
+.form-gender .form-label:not(:first-child) {
+    font-weight: normal;
+    display: inline-block;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.form-label-gender,
+.form-input-radio {
+    cursor: pointer;
+}
+
+.img-file {
+    width: 80px;
+    cursor: pointer;
+}
+
+.form-checkbox .form-label {
+    display: block;
+}
+
+.form-checkbox .form-label.form-label:not(:first-child) {
+    font-weight: normal;
+}
+
+.form-checkbox {
+    margin-bottom: 15px;
+}
+
+.form-label-checkbox {
+    display: block;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 6px 12px;
+    background-color: yellow;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.btn:active {
+    color: #fff;
+    background-color: #4caf50;
 }
