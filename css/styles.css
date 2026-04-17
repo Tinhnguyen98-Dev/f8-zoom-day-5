@@ -85,7 +85,7 @@ a {
     text-align: justify;
 }
 
-.menu li::before {
+.menu > li::before {
     content: "\2022";
     position: absolute;
     font-size: 1.6rem;
@@ -288,6 +288,10 @@ li.active a {
 }
 
 /* pricing-table.html */
+.heading-blog:not(h1) {
+    color: orange;
+}
+
 :root {
     --main-color: #160f38;
 }
@@ -383,4 +387,142 @@ li.active a {
     position: absolute;
     top: 1px;
     left: -19px;
+}
+
+/* blog-post-html */
+.heading {
+    margin: 40px 0;
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #222;
+}
+
+.user-infor {
+    display: block;
+    height: 50px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.user-avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-name {
+    display: inline-block;
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #292929;
+    position: absolute;
+    top: 30%;
+    left: 60px;
+}
+
+.content-heading {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 16px 0;
+}
+
+.content-heading:first-of-type::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: #f05123;
+}
+
+.content p::first-line {
+    background-color: yellow;
+}
+
+::selection {
+    background-color: greenyellow;
+}
+
+hr {
+    border: none;
+    border-color: transparent;
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px 0;
+}
+
+.heading-content {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.para-content {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 16px 0;
+}
+
+.link-content {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #f05123;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.quotation {
+    position: relative;
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: center;
+    line-height: 40px;
+}
+
+.quotation::before {
+    content: '"';
+    position: absolute;
+    left: 120px;
+    font-size: 1.6rem;
+}
+
+.quotation::after {
+    content: '"';
+    position: absolute;
+    right: 120px;
+    font-size: 1.6rem;
+}
+
+.footer {
+    margin: 40px 0;
+}
+
+.comment {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment:hover {
+    background-color: rgba(134, 219, 235, 1);
+    border: 1px solid #f05123;
+    border-radius: 4px;
+}
+
+.user-comment {
+    margin-left: 10px;
+}
+
+.para-comment {
+    font-size: 1.6em;
+    padding-left: 12px;
+    padding-bottom: 12px;
+}
+
+p:nth-of-type(2)::first-letter {
+    font-size: 150%;
+    font-weight: bold;
+    color: #000;
 }
